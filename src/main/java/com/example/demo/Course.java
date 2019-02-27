@@ -22,6 +22,16 @@ public class Course {
         @Min(3)
         private int credit;
 
+        public Course(@NotNull String title, @NotNull String instructor, @NotNull String description, @NotNull @Min(3) int credit) {
+                this.title = title;
+                this.instructor = instructor;
+                this.description = description;
+                this.credit = credit;
+        }
+
+        public Course() {
+        }
+
         public long getId() {
                 return id;
         }
